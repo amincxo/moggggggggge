@@ -1,0 +1,38 @@
+.banner {
+    width:100vw;
+    height: 80vh;
+}
+.bannerSmall {
+    width:100vw;
+    height: 80vh;
+}
+.LoadingContainer {
+    color: #DDDCDC;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #495B4D;
+}
+.LoadingContainer h2 {
+    margin:1vh 0 1vh 0;
+}
+.LoadingContainer p {
+    margin:1vh 0 1vh 0;
+}
+body {
+    background-color: #495B4D;
+    font-size: 18px;
+}
+
+@media (max-width: 496px) {
+    body {
+      font-size: 14px;
+    }
+    .banner {
+        width: 800px;
+        height: 80vh;
+
+    }
+  }

@@ -1,0 +1,52 @@
+body {
+    color: wheat;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form label  {
+    margin: 10px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.form input {
+    padding: 5px;
+    width: 300px;
+    height: 40px ;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form button {
+    margin: 20px;
+    background-color: wheat;
+    padding: 9px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+.form a {
+    text-decoration: none;
+}

@@ -1,0 +1,96 @@
+/* src/Sidebar.css */
+.sidebarContainer {
+    position: relative;
+}
+body {
+    color: black !important;
+}
+.menuToggle {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    z-index: 10;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -280px; /* منو خارج از دید */
+    width: 280px;
+    height: 100%;
+    background: #D9D9D9;
+    color: rgb(0, 0, 0);
+    transition: right 0.3s ease; /* انیمیشن نرمی */
+    padding: 20px;
+}
+
+li p {
+    color: black;
+}
+.sidebar.open {
+    right: 0; /* منو به سمت چپ می‌آید */
+}
+
+.closeButton {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    right: 215px; /* موقعیت دکمه بستن */
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sideBar {
+    flex: 1;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+.sideBar h3 {
+    margin: 2vh 0 1vh 0;
+    font-weight: 300 ;
+    cursor: pointer;
+    color: black;
+}
+a {
+    color: black;
+}
+.sideBar p {
+    margin-top: 0.5vh;
+    font-weight: 300 ;
+    cursor: pointer;
+    color: black;
+}
+
+.hesab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 670px) {
+    .sidebar-toggle {
+        display: block; /* نمایش دکمه همبرگر */
+    }
+}
